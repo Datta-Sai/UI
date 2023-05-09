@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> The University of Brisbane</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800&display=swap" rel="stylesheet">
+        <script>
+            function validate() {
+              var name = document.getElementById("name1").value;
+              var mail = document.getElementById("mail").value;
+              var comm = document.getElementById("comm").value;
+              var emailid = document.myform.mail.value;
+              atpos = emailid.indexOf("@");
+              dotpos = emailid.lastIndexOf(".");
+              if (name == null || name == ""){
+                alert("Enter the name");
+                return false;
+            }
+              if (mail == null || mail == "") {
+                alert("Enter your e-mail");
+                return false;
+            }
+            if (atpos < 1 || (dotpos - atpos) < 2) {
+                alert("Please enter correct email Id");
+                return false;
+            }
+            if (comm == null || comm == ""){
+                alert("Please enter your Comment");
+                return false;
+            }
+            var ph=document.getElementById("ph").value;
+     var pin = /^[2][0][0-9]{4}$/;
+      if(ph==null || ph==""){
+        alert("Mandatory to enter student id");
+        return false;
+
+    }
+    if(ph.length!=6){
+       alert("enter only 6 Numbers");
+       return false;
+   }
+if(pin.test(ph))
+      {
+}
+
+else
+        {
+     
+    alert("The first and second number must contain 2 and 0");
+    return false;
+    }
+
+
+              alert("REGISTRATION SUCCESSFUL");
+            return true;
+            }
+        
+          </script>
+    </head>
+    <body>
+        <section class="header1">
+            <nav class ="navbar">
+                <a href="index.html"><img src="images/Full logo.jpg" alt=""></a> 
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+                        <li><a href="secondpage.html"><i class="fa fa-align-justify"></i>ABOUT</a></li>
+                        <li><a href="thirdpage.html"><i class="fa fa-clone"></i>COURSE</a></li>
+                        <li><a href=""><i class="fa fa-comments"></i>BLOG</a></li>
+                        <li><a href="eleventhpage.html"><i class="fa fa-phone"></i>CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </body>
+    <body class="back">
+        <div class="blog">
+            <h1>Student says</h1>
+        </div>
+        <div class="slider">
+            <div class="indicator">
+                <span class="btn2 active"></span>
+                <span class="btn2"></span>
+            </div>
+            <div class="slider1">
+                <div class="blog1" id="slide">
+                    <div class="blog2">
+                        <div class="comment1">
+                            <img src="images/student1.jpeg" alt="">
+                            <p><i class="fa fa-quote-left left"></i> I am really statisfied with the teaching on my course. There has been alot of support available such as assignment extentions to adaot to the pandemic situation. This has been really helpful. The lecturer are amazing and ready to help with any questions. <i class="fa fa-quote-right right"></i></p>
+                            <p class="name">John</p>
+                            <p class="email">john123@gmail.com</p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="blog2">
+                        <div class="comment2">
+                            <img src="images/student2.jpeg" alt="">
+                            <p><i class="fa fa-quote-left left"></i> I am really statisfied with the teaching on my course. There has been alot of support available such as assignment extentions to adaot to the pandemic situation. This has been really helpful. The lecturer are amazing and ready to help with any questions. <i class="fa fa-quote-right right"></i></p>
+                            <p class="name">Angelina</p>
+                            <p class="email">angelina34@gmail.com</p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                    </div>
+                    <div class="blog2">
+                        <div class="comment3">
+                            <img src="images/student3.jpeg" alt="">
+                            <p><i class="fa fa-quote-left left"></i> I am really statisfied with the teaching on my course. There has been alot of support available such as assignment extentions to adaot to the pandemic situation. This has been really helpful. The lecturer are amazing and ready to help with any questions. <i class="fa fa-quote-right right"></i></p>
+                            <p class="name">Morris</p>
+                            <p class="email">morris888@gmail.com</p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                    <div class="blog2">
+                        <div class="comment4">
+                            <img src="images/student4.jpeg" alt="">
+                            <p><i class="fa fa-quote-left left"></i> I am really statisfied with the teaching on my course. There has been alot of support available such as assignment extentions to adaot to the pandemic situation. This has been really helpful. The lecturer are amazing and ready to help with any questions. <i class="fa fa-quote-right right"></i></p>
+                            <p class="name">Josephine</p>
+                            <p class="email">josephine456@gmail.com</p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var point = document.getElementsByClassName("btn2");
+            var slide = document.getElementById("slide");
+            point[0].onclick = function(){
+                slide.style.transform = "translateX(0px)";
+                for(i=0;i<2;i++){
+                    point[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+            point[1].onclick = function(){
+                slide.style.transform = "translateX(-800px)";
+                for(i=0;i<2;i++){
+                    point[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+        </script>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".comment1"),{
+		    max: 25,
+		    speed: 400,
+            "max-glare": 1,
+	        });
+        </script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".comment2"),{
+		    max: 25,
+		    speed: 400,
+            "max-glare": 1,
+	        });
+        </script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".comment3"),{
+		    max: 25,
+		    speed: 400,
+            "max-glare": 1,
+	        });
+        </script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".comment4"),{
+		    max: 25,
+		    speed: 400,
+            "max-glare": 1,
+	        });
+        </script>
+        <div class="comment-box">
+            <h2>Leave your Comment</h2>
+            <form name="myform" method="POST" onsubmit="return validate()">
+                <input type="text" id="name1" name="full name" placeholder="Full Name..." >
+                <input type="email" id="mail" name="email" placeholder="Email Address..." >
+                <input type="number" name="Roll Number" placeholder="Enter student id..." id="ph">
+                <textarea name="comment" id="comm" cols="30" rows="10" placeholder="Type your comment..."></textarea>
+                <section">
+                    <div>
+                    <form method="POST">  
+                      <td><button type="submit">Submit Comment</button>
+                    </div>
+                  </form>
+                  </section>
+
+            </form>
+        </div>
+    </body>
+</html>

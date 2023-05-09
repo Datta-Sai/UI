@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The University of Brisbane</title>
+<link rel="icon" href="IMAGES/logo.png">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="text/javascript">
+function validate() {
+    var name = document.getElementById("name1").value;
+    var mail = document.getElementById("mail").value;
+      var emailid = document.myform.mail.value;
+      var ph = document.getElementById("ph").value;
+      var mobile = /^[0-9]{10}$/;
+      atpos = emailid.indexOf("@");
+      dotpos = emailid.lastIndexOf(".");
+      var comm = document.getElementById("comments").value;
+    if (name == null || name == ""){
+        alert("enter the name");
+        return false;
+      }  
+      if (mail == null || mail == "") {
+        alert("enter your e-mail");
+        return false;
+      }
+      if (atpos < 1 || (dotpos - atpos) < 2) {
+        alert("Please enter correct email Id");
+        return false;
+      }
+      if (ph == null || ph == "") {
+        alert("Enter phone nummber");
+        return false;
+      }
+      if (mobile.test(ph)) {
+        document.getElementById
+      }
+      else {
+        alert("Invaild Phone Number");
+        alert("It must contain 10 numbers");
+        return false;
+      }
+    var p = comm.length;
+      var r = 100 - p;
+    if (comm.length > 100) {
+        alert("The comments are exceeding more than 100 characters");
+        return false;
+      }
+
+      alert("Total characters you have entered in the comment box are: " + p);
+      alert("Pending characters are: " + r);
+      return true;
+}
+</script>
+</head>
+<body>
+    <section class="header1">
+        <nav class="navbar">
+            <a href="index.html"><img src="IMAGES/Full logo.jpg" alt=""></a> 
+            <div  class="nav-links">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+                    <li><a href="secondpage.html"><i class="fa fa-align-justify"></i>ABOUT</a></li>
+                    <li><a href="thirdpage.html"><i class="fa fa-clone"></i>COURSE</a></li>
+                    <li><a href="tenthpage.html"><i class="fa fa-comments"></i>BLOG</a></li>
+                    <li><a href=""><i class="fa fa-phone"></i>CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+<body>
+    <section class="contact" id="2">
+        <div class="content1">
+            <br>
+            <br>
+            <h2>Contact Us</h2>
+            </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p><br>25th Avenue street<br>Sector 45<br>Brisbane</p>
+                        </div>                    
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+61 7216786167</p>
+                        </div>                    
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>brisbaneuniversity@gmail.com</p>
+                        </div>                    
+                </div>
+            </div>      
+        <div class="contactform">
+            <form name="myform" method="post">
+                 <h2>Send Message</h2>
+                 <div class="inputbox">
+                        <input type="text" id="name1" >
+                        <span>Full Name</span>
+                 </div>
+                 <div class="inputbox">
+                    <input type="email" id="mail" >
+                    <span>Email</span>
+                 </div>
+                 <div class="inputbox">
+                    <input type="number" id="ph" >
+                    <span>Phone number</span>
+                 </div>
+             <div class="inputbox">
+                <textarea id="comments"></textarea>
+                <span class="message">Type your Message...</span>
+             </div>
+             <div class="inputbox">
+                <input type="submit" name="" value="Send" onclick="return validate()" >               
+             </div>
+            </form>
+        </div>
+    </div>    
+     </section>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453478.8006792069!2d152.71300288692044!3d-27.381863103743083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91579aac93d233%3A0x402a35af3deaf40!2sBrisbane%20QLD%2C%20Australia!5e0!3m2!1sen!2sin!4v1622383978941!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <hr>
+    <section class="cont-footer">
+        <h4>About us</h4>
+        <p>To know much about us and receive updates regularly you can also<br> stay connected to our social media pages</p>
+        <div class="cont-icons">
+            <a href="https://www.facebook.com/BrisbaneCity/" target="_blank"<i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/brisbanecity/?hl=en" target="_blank"<i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/brisbanecityqld?lang=en" target="_blank"<i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE5-J_Kmp-W7QAAAXm7l-6Y4ujS5OgF4ZEusc137oe7HqMJhCfvqsBcxWTGoNYtvDL6xMI_q_2Ku01ulvC3ODJjiUt0GSu6nMdG0hwf9tfEq6sUwPeUcOfJQSZVWB3PAOMijtg=&originalReferer=&sessionRedirect=https%3A%2F%2Fau.linkedin.com%2Fcompany%2Fbrisbane" target="_blank"<i class="fa fa-linkedin"></i></a>
+        </div>
+        <a href="#2"<span style='font-size:30px;float: right;padding-right: 30px; transition: 2s;'>&#8593;</span></a>
+   </section>
+</body>
+</html>
